@@ -1,4 +1,4 @@
 function myFunction() {
-  Logger.log("Hello World!!");
-  Logger.getLog();
+  var sheet = SpreadsheetApp.getActiveSheet();
+  Logger.log(sheet.getName());
 }
