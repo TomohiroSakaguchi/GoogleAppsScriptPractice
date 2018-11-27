@@ -1,4 +1,5 @@
 function myFunction() {
   var sheet = SpreadsheetApp.getActiveSheet();
-  Logger.log(sheet.getName());
+  var range = sheet.getRange('B2');
+  Logger.log(range.getValue());
 }
