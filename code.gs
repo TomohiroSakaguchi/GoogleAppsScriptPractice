@@ -5,6 +5,11 @@ function myFunction() {
     if(!sheet.getRange(i, 2).getValue()){
       Logger.log(sheet.getRange(i,1).getValue());
       sheet.getRange(i, 2).setValue('TRUE');
+      break;
     }
+  }
+  
+  if(i>=lastRow){
+    sheet.getRange(1, 2, lastRow).clearContent();
   }
 }
